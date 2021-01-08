@@ -1,0 +1,9 @@
+version: "3"
+services:
+  centos:
+    image: centos:centos7
+    command: "tail -f /dev/null"
+    working_dir: /demo
+    volumes:
+      - C:\projects\ffmpeg\ffmpeg:/ffmpeg
+      - C:\projects\ffmpeg\demo:/demo
